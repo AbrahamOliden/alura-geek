@@ -9,35 +9,42 @@
 </head>
 <body>
     <div id="root">
-        <header class="branding">
-            <img src="../assets/Hearts.png" alt="8-bit style hearts" />
-            <h1>AluraGeek</h1>
+        <header class="header">
+            <img src="../assets/Hearts.png" alt="8-bit style hearts" class="header__logo"/>
+            <h1 class="header__title">AluraGeek</h1>
         </header>
         <main>
-            <section>
-                <h2>ADD ITEM:</h2>
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+            <section class="input">
+                <h2 class="input__title">ADD ITEM:</h2>
+                <form action="" class="input__form">
+                    <label for="name" class="input__form__label" >Name</label>
+                    <input type="text" id="name" name="name" class="input__form__field" >
 
-                    <label for="price">Price</label>
-                    <input type="text" id="price" name="price">
+                    <label for="price" class="input__form__label" >Price</label>
+                    <input type="text" id="price" name="price" class="input__form__field" >
 
-                    <label for="image">Image</label>
-                    <input type="text" id="image" name="image">
+                    <label for="image" class="input__form__label" >Image</label>
+                    <input type="text" id="image" name="image" class="input__form__field" >
 
-                    <input type="submit">Submit
-                    <button>CLEAR</button>
+                    <input type="submit" class="input__form__submit" >Submit
+                    <button class="input__form__clear">CLEAR</button>
                 </form>
             </section>
-            <section>
-                <h2>MY PRODUCTS:</h2>
-                <ul></ul>
+            <section class="output">
+                <h2 class="output__title">MY PRODUCTS:</h2>
+                <ul class="output__list">
+                    <li class="output__list__item"></li>
+                    <li class="output__list__item"></li>
+                    <li class="output__list__item"></li>
+                </ul>
             </section>
         </main>
-        <footer class="branding">
-            <img src="../assets/Hearts.png" alt="8-bit style hearts" />
-            <h3>AluraGeek</h3>
+        <footer class="footer">
+            <div class="footer__title-container">
+                <img src="../assets/Hearts.png" alt="8-bit style hearts" />
+                <h3>AluraGeek</h3>
+            </div>
+
             <p>DEVELOPED BY ABRAHAM OLIDEN</p>
             <p>ALURA LATAM 2024</p>
         </footer>
