@@ -1,7 +1,34 @@
 :root {
+    --primary-color: #F7EAF6;
     --secondary-color: #5300C8;
 }
 
-.branding {
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.header__title {
+    font-size: 2rem;
+}
+
+/*  */
+
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.footer__title-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 2rem;
 }
