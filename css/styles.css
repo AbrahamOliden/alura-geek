@@ -19,13 +19,13 @@
 
 main { /*cambiar a BEM despues*/
     background-color: var(--primary-color);
-    padding: 2rem ;
 }
 
 .input {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 16px 0;
 }
 
 .input__title {
@@ -82,7 +82,52 @@ main { /*cambiar a BEM despues*/
 }
 
 .output {
-    margin: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 16px 0;
+    max-height: 50vh;
+}
+
+.output__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.output__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.output__list__item__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: -5px 6px 3px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    gap: 10px;
+}
+
+.output__list__item__container__p {
+    align-self: flex-start;
+}
+
+.output__list__item__container__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.output__list__item__container__container__p {
+    font-weight: bold;
 }
 
 /*  */
@@ -91,8 +136,10 @@ main { /*cambiar a BEM despues*/
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    gap: 10px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    padding: 16px 0;
 }
 
 .footer__title-container {
