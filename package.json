@@ -1,0 +1,22 @@
+{
+  "name": "alura-geek",
+  "version": "1.0.0",
+  "description": "alura platform for uploading personal items' info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AbrahamOliden/alura-geek.git"
+  },
+  "author": "Abraham Oliden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbrahamOliden/alura-geek/issues"
+  },
+  "homepage": "https://github.com/AbrahamOliden/alura-geek#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.0"
+  }
+}
