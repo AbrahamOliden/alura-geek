@@ -2,7 +2,9 @@ async function itemsList() {
     const connection = await fetch('http://localhost:3001/products');
     const parsedConnection = connection.json()
 
-    console.log(parsedConnection);
+    return parsedConnection;
 }
 
-itemsList();
+export const API_connection = {
+    itemsList
+}
