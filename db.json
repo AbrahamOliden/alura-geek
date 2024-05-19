@@ -1,0 +1,16 @@
+{
+    "products": [
+        {
+            "name": "Stormtrooper",
+            "price": "$60.00",
+            "image": "./assets/Stormtrooper.png",
+            "id": 1
+        },
+        {
+            "name": "Stormtrooper",
+            "price": "$60.00",
+            "image": "./assets/Stormtrooper.png",
+            "id": 1
+        }
+    ]
+}
