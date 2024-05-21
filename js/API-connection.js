@@ -5,6 +5,6 @@ async function itemsList() {
     return parsedConnection;
 }
 
-export const API_connection = {
+export const apiConnection = {
     itemsList
 }
