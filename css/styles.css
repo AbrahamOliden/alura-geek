@@ -122,6 +122,11 @@ main { /*cambiar a BEM despues*/
     gap: 10px;
 }
 
+.item-image {
+    width: 176px;
+    height: 174px;
+}
+
 .output__list__item__container__p {
     align-self: flex-start;
 }
