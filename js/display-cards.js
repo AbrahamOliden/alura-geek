@@ -7,7 +7,7 @@ function createCard(image, name, price) {
     card.className = 'output__list__item';
     card.innerHTML = `
     <div class="output__list__item__container">
-        <img src=${image} alt="producto"/>
+        <img src=${image} class="item-image" alt="producto"/>
         <p class="output__list__item__container__p" >${name}</p>
 
         <div class="output__list__item__container__container">
