@@ -5,7 +5,7 @@ async function itemsList() {
     return parsedConnection;
 };
 
-async function createCard(image, name, price) {
+async function sendVideo(image, name, price) {
     const connection = await fetch('http://localhost:3001/products', {
         method: 'POST',
         headers: {'Content-type': 'application/json'},
@@ -21,5 +21,5 @@ async function createCard(image, name, price) {
 }
 
 export const apiConnection = {
-    itemsList, createCard
+    itemsList, sendVideo
 }
