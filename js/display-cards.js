@@ -12,7 +12,7 @@ function createCard(image, name, price) {
 
         <div class="output__list__item__container__container">
             <p class="output__list__item__container__container__p">${price}</p>
-            <button>
+            <button class="delete-button">
                 <i class="fa-solid fa-trash"></i>
             </button>
         </div>
