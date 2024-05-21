@@ -2,17 +2,19 @@ import { apiConnection } from "./API-connection.js";
 
 const list = document.querySelector('[data-list]');
 
-function createCard() {
+function createCard(image, name, price) {
     const card = document.createElement('li');
     card.className = 'output__list__item';
     card.innerHTML = `
     <div class="output__list__item__container">
-        <img src="../assets/Stormtrooper.png" alt="producto"/>
-        <p class="output__list__item__container__p" >Stormtrooper</p>
+        <img src=${image} alt="producto"/>
+        <p class="output__list__item__container__p" >${name}</p>
 
         <div class="output__list__item__container__container">
-            <p class="output__list__item__container__container__p">$60.00</p>
-            <i class="fa-solid fa-trash"></i>
+            <p class="output__list__item__container__container__p">${price}</p>
+            <button>
+                <i class="fa-solid fa-trash"></i>
+            </button>
         </div>
                             
     </div>
@@ -22,5 +24,11 @@ function createCard() {
 };
 
 async function listItems() {
-    const API_list = apiConnection.itemsList();
+    const apiList = await apiConnection.itemsList();
+
+    apiList.forEach((video) => {
+        list.appendChild( createCard( video.image, video.name, video.price ) );
+    });
 };
+
+listItems()
