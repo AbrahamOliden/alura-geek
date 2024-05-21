@@ -1,11 +1,17 @@
+import { apiConnection } from "./API-connection.js";
+
 const form = document.querySelector('[data-form]');
 
-function createVideo(e) {
+async function createVideo(e) {
     e.preventDefault();
     
+    const image = document.querySelector('[data-image]').value;
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
-    const image = document.querySelector('[data-image]').value;
+
+    await apiConnection.sendVideo(image, name, price);
+
+    alert('Awebo');
 };
 
 form.addEventListener('submit', (e) => createVideo(e));
