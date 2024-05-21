@@ -1,40 +1,40 @@
 {
-    "products": [
-        {
-            "name": "Stormtrooper",
-            "price": "$60.00",
-            "image": "../assets/Stormtrooper.png",
-            "id": 1
-        },
-        {
-            "name": "Game Boy Classic",
-            "price": "$60.00",
-            "image": "../assets/GameBoy.png",
-            "id": 2
-        },
-        {
-            "name": "Stormtrooper",
-            "price": "$60.00",
-            "image": "../assets/Stormtrooper.png",
-            "id": 3
-        },
-        {
-            "name": "Game Boy Classic",
-            "price": "$60.00",
-            "image": "../assets/GameBoy.png",
-            "id": 4
-        },
-        {
-            "name": "Stormtrooper",
-            "price": "$60.00",
-            "image": "../assets/Stormtrooper.png",
-            "id": 5
-        },
-        {
-            "name": "Game Boy Classic",
-            "price": "$60.00",
-            "image": "../assets/GameBoy.png",
-            "id": 6
-        }
-    ]
+  "products": [
+    {
+      "name": "Stormtrooper",
+      "price": "$60.00",
+      "image": "../assets/Stormtrooper.png",
+      "id": 1
+    },
+    {
+      "name": "Game Boy Classic",
+      "price": "$60.00",
+      "image": "../assets/GameBoy.png",
+      "id": 2
+    },
+    {
+      "name": "Stormtrooper",
+      "price": "$60.00",
+      "image": "../assets/Stormtrooper.png",
+      "id": 3
+    },
+    {
+      "name": "Game Boy Classic",
+      "price": "$60.00",
+      "image": "../assets/GameBoy.png",
+      "id": 4
+    },
+    {
+      "name": "Stormtrooper",
+      "price": "$60.00",
+      "image": "../assets/Stormtrooper.png",
+      "id": 5
+    },
+    {
+      "name": "Game Boy Classic",
+      "price": "$60.00",
+      "image": "../assets/GameBoy.png",
+      "id": 6
+    }
+  ]
 }
