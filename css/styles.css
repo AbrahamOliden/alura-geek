@@ -133,6 +133,13 @@ main { /*cambiar a BEM despues*/
     min-width: 100%;
 }
 
+.delete-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 1rem;
+}
+
 .output__list__item__container__container__p {
     font-weight: bold;
 }
