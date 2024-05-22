@@ -2,7 +2,7 @@ import { apiConnection } from "./API-connection.js";
 
 const list = document.querySelector('[data-list]');
 
-function createCard(image, name, price) {
+function createCard(image, name, price, id) {
     const card = document.createElement('li');
     card.className = 'output__list__item';
     card.innerHTML = `
@@ -12,7 +12,7 @@ function createCard(image, name, price) {
 
         <div class="output__list__item__container__container">
             <p class="output__list__item__container__container__p">${price}</p>
-            <button class="delete-button">
+            <button class="delete-button" data-id=${id}>
                 <i class="fa-solid fa-trash"></i>
             </button>
         </div>
@@ -27,7 +27,7 @@ async function listItems() {
     const apiList = await apiConnection.itemsList();
 
     apiList.forEach((video) => {
-        list.appendChild( createCard( video.image, video.name, video.price ) );
+        list.appendChild( createCard( video.image, video.name, video.price, video.id ) );
     });
 };
 
