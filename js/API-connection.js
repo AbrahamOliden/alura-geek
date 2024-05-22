@@ -18,8 +18,21 @@ async function sendCard(image, name, price) {
 
     const parsedConnection = connection.json();
     return parsedConnection;
-}
+};
+
+async function deleteCard(id) {
+    const connection = await fetch('http://localhost:3001/products', {
+        method: 'DELETE',
+        headers: {'Content-type': 'application/json'},
+        body: JSON.stringify({
+            id: id
+        })
+    });
+
+    const parsedConnection = connection.json;
+    return parsedConnection;
+};
 
 export const apiConnection = {
-    itemsList, sendCard
+    itemsList, sendCard, deleteCard
 }
