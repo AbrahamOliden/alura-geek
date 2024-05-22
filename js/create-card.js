@@ -10,8 +10,6 @@ async function createVideo(e) {
     const price = document.querySelector('[data-price]').value;
 
     await apiConnection.sendVideo(image, name, price);
-
-    alert('Awebo');
 };
 
 form.addEventListener('submit', (e) => createVideo(e));
