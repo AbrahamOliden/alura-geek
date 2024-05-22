@@ -143,10 +143,15 @@ main { /*cambiar a BEM despues*/
     color: var(--primary-color);
     border: none;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .output__list__item__container__container__p {
     font-weight: bold;
+}
+
+.output__list__item__container__container__p::before {
+    content: '$';
 }
 
 /*  */
