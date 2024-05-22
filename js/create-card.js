@@ -9,7 +9,7 @@ async function newCard(e) {
     const name = document.querySelector('[data-name]').value;
     const price = document.querySelector('[data-price]').value;
 
-    await apiConnection.sendVideo(image, name, price);
+    await apiConnection.sendCard(image, name, price);
 };
 
 form.addEventListener('submit', (e) => newCard(e));
