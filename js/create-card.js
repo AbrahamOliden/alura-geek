@@ -2,7 +2,7 @@ import { apiConnection } from "./API-connection.js";
 
 const form = document.querySelector('[data-form]');
 
-async function createCard(e) {
+async function newCard(e) {
     e.preventDefault();
     
     const image = document.querySelector('[data-image]').value;
@@ -12,4 +12,4 @@ async function createCard(e) {
     await apiConnection.sendVideo(image, name, price);
 };
 
-form.addEventListener('submit', (e) => createCard(e));
+form.addEventListener('submit', (e) => newCard(e));
