@@ -35,6 +35,12 @@
       "price": "$60.00",
       "image": "../assets/GameBoy.png",
       "id": 6
+    },
+    {
+      "image": "https://images7.memedroid.com/images/UPLOADED544/608212bbaeb58.jpeg",
+      "name": "Picsa Ramirez",
+      "price": "20.00",
+      "id": 7
     }
   ]
 }
