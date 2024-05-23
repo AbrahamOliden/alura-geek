@@ -21,12 +21,9 @@ async function sendCard(image, name, price) {
 };
 
 async function deleteCard(id) {
-    const connection = await fetch('http://localhost:3001/products', {
+    const connection = await fetch(`http://localhost:3001/products/${id}`, {
         method: 'DELETE',
-        headers: {'Content-type': 'application/json'},
-        body: JSON.stringify({
-            id: id
-        })
+        headers: {'Content-type': 'application/json'}
     });
 
     const parsedConnection = connection.json;
