@@ -6,5 +6,4 @@ clearButton.addEventListener('click', () => clearInputs());
 
 function clearInputs() {
     inputs.forEach( (input) => input.value = '' );
-    console.log(inputs);
 };
